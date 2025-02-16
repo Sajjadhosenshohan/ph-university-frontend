@@ -14,7 +14,7 @@ const MainLayout = () => {
     dispatch(logout());
   };
   return (
-    <Layout style={{ height: "100vh" }}>
+    <Layout>
       <Sidebar />
       <Layout>
         <Header>
@@ -25,6 +25,7 @@ const MainLayout = () => {
             style={{
               padding: 24,
               minHeight: 360,
+              width: "100%"
             }}
           >
             <Outlet />
